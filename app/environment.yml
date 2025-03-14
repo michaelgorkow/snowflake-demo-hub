@@ -1,0 +1,7 @@
+# Streamlit in Snowflake
+name: streamlit-app
+channels:
+  - snowflake
+dependencies:
+  - streamlit=1.39.0
+  - pyyaml=6.0.2
