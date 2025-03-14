@@ -1,0 +1,23 @@
+demo:
+- id: snowflake_cortex_agents_demo
+  name: Cortex Agents Demo
+  description: A Snowflake demo showcasing Cortex Agents.
+  version: 1.0.0
+  author: Michael Gorkow
+  author_email: michael.gorkow@snowflake.com
+  snowflake:
+    - database: CORTEX_AGENTS_DEMO
+    - warehouse: COMPUTE_WH
+  repository: 
+  - name: Cortex Agents Demo
+    url: https://github.com/michaelgorkow/snowflake_cortex_agents_demo
+    setup:
+      - script: https://github.com/michaelgorkow/snowflake_cortex_agents_demo/setup.sql
+  extras:
+    - name: main
+      description: Example Use Case
+      setup_script: https://github.com/michaelgorkow/snowflake_cortex_agents_demo/blob/main/use_cases/main/_internal/setup.sql
+    - name: snowprint
+      description: SnowPrint Use Case
+      setup:
+        - script: https://github.com/michaelgorkow/snowflake_cortex_agents_demo/blob/main/use_cases/snowprint/_internal/setup.sql

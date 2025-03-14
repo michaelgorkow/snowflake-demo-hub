@@ -1,0 +1,15 @@
+demo:
+- id: snowflake_cortex_agents_demo
+  name: Cortex Agents Demo
+  description: A Snowflake demo showcasing Cortex Agents.
+  version: 1.0.0
+  author: Michael Gorkow
+  author_email: michael.gorkow@snowflake.com
+  snowflake:
+    - database: CORTEX_AGENTS_DEMO
+    - warehouse: COMPUTE_WH
+  repository: 
+  - name: Simple MLOps Demo
+    url: https://github.com/michaelgorkow/snowflake_simple_mlops
+    setup:
+      - script: https://github.com/michaelgorkow/snowflake_simple_mlops/blob/main/_internal/setup.sql
